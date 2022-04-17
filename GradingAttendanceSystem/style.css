@@ -1,0 +1,17 @@
+.container:hover{
+    background-color: blue;
+}
+.gridItem{
+    background-color:lightcoral;
+    border: black 5px solid;
+    padding: 3px;
+    font-size: 25px;
+    text-align: center;
+}
+.Student{
+    background-color:lightcyan;
+    border: black 5px solid;
+    padding: 3px;
+    font-size: 25px;
+    text-align: center;
+}
