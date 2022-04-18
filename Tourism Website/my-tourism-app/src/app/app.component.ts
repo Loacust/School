@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { GetcitiesService } from './services/getcities.service';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +7,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
- 
+ myName = "Janson"
+
+ constructor(private getCities:GetcitiesService){}
 }

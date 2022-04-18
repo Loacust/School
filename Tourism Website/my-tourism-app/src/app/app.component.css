@@ -1,0 +1,30 @@
+.navBar{
+    background-color: rgb(192,192,192,1);
+    position: fixed;
+    width: 100%;
+    padding-top: 10px ;
+    padding-bottom: 10px;
+    top: 0%;
+    left: 0%;
+    text-align: center;
+}
+
+.foot{
+    background-color: rgb(192,192,192,3);
+    position: fixed;
+    width: 100%;
+    padding-top: 10px ;
+    padding-bottom: 10px;
+    bottom: 0%;
+    left: 0%;
+    text-align: center;
+    color: black;
+}
+.anchors{
+    display: inline;
+    padding: 10px;
+    color:black;
+}
+.homeAlign{
+    margin-top: 50px;
+}
