@@ -1,6 +1,6 @@
 
 
-import { cityInfo} from './citiesinfo';
+import { cityInfo } from './citiesinfo';
 
 export const Citiesinfo: cityInfo[]= [
     {name:'Aswan', attractionSites:["Abu-Simbel","Nubian Museum","Elaphatine"]},
@@ -8,3 +8,4 @@ export const Citiesinfo: cityInfo[]= [
     {name:'Luxor', attractionSites:["Abu-Simbel","Nubian Museum","Elaphatine"]},
     {name:'Sharm El-Sheikh', attractionSites:["Naama","Ras Muhammad National Park",]},
 ];
+
