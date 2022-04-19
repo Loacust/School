@@ -8,6 +8,7 @@ import { HomeComponent } from './components/home/home.component';
 import { WeatherComponent } from './components/weather/weather.component';
 import { TechIdeasComponent } from './components/tech-ideas/tech-ideas.component';
 import { CitiesComponent } from './components/cities/cities.component';
+import { WeatherDetailsComponent } from './components/weather-details/weather-details.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { CitiesComponent } from './components/cities/cities.component';
     HomeComponent,
     WeatherComponent,
     TechIdeasComponent,
-    CitiesComponent
+    CitiesComponent,
+    WeatherDetailsComponent
   ],
   imports: [
     BrowserModule,

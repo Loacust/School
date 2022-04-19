@@ -1,1 +1,9 @@
-<p>weather works!</p>
+<div class="top">
+    <ul>
+        <p *ngFor="let weather of weatherData">
+            <a class="top" [routerLink]="['/weather',weather.name,weather.springN,weather.springM,weather.summerN,weather.summerM,weather.winterN,weather.winterM,weather.autumnN,weather.autumnM,weather.visitFrom,weather.visitTo]">{{weather.name}}</a>
+        </p>
+    </ul>
+</div>
+
+
