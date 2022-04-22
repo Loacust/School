@@ -6,3 +6,7 @@ table{
 table,th,td{
     border: black solid 2px;
 }
+h1,p{
+    margin-top: 100px;
+    text-align: center;
+}

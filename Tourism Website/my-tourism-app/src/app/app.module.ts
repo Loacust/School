@@ -9,6 +9,7 @@ import { WeatherComponent } from './components/weather/weather.component';
 import { TechIdeasComponent } from './components/tech-ideas/tech-ideas.component';
 import { CitiesComponent } from './components/cities/cities.component';
 import { WeatherDetailsComponent } from './components/weather-details/weather-details.component';
+import { IportantTextDirective } from './directives/iportant-text.directive';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { WeatherDetailsComponent } from './components/weather-details/weather-de
     WeatherComponent,
     TechIdeasComponent,
     CitiesComponent,
-    WeatherDetailsComponent
+    WeatherDetailsComponent,
+    IportantTextDirective
   ],
   imports: [
     BrowserModule,
