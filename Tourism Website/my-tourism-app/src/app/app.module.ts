@@ -10,6 +10,8 @@ import { TechIdeasComponent } from './components/tech-ideas/tech-ideas.component
 import { CitiesComponent } from './components/cities/cities.component';
 import { WeatherDetailsComponent } from './components/weather-details/weather-details.component';
 import { IportantTextDirective } from './directives/iportant-text.directive';
+import { CommonModule } from '@angular/common';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -23,7 +25,10 @@ import { IportantTextDirective } from './directives/iportant-text.directive';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    CommonModule,
+    ReactiveFormsModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

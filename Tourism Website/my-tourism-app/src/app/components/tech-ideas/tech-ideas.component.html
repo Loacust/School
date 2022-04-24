@@ -1,1 +1,29 @@
-<p>tech-ideas works!</p>
+<form>
+    <div>
+        <label for = " userName">Name</label>
+        <input type="text" id="userName">
+    </div>
+    <br>
+    <div>
+        <label for = "userEmail">E-mail</label>
+        <input type= "email" id = "userEmail">
+    </div>
+    <div>
+        <label for="userAge">Age</label>
+        <input type="number" id="userAge">
+    </div>
+    <br>
+    <div>
+        <label for="targetCity">Target City</label>
+        <select id="targetCity">
+            <option value ="{{cities}}" *ngFor = "let city of cities">{{city}}</option>
+        </select>
+    </div>
+    <br>
+    <div>
+        <label for="brief">Brief about your technical idea:</label>
+        <textarea row="4" cols="50" id = "brief"></textarea>
+    </div>
+    <br>
+    <button type="submit">Submit</button>
+</form>
