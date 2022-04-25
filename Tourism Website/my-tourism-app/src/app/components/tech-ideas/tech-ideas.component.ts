@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { FormBuilder } from '@angular/forms';
+import { FormBuilder, Validators } from '@angular/forms';
 import { GetCityNamesService } from 'src/app/services/get-city-names.service';
 
 @Component({
@@ -9,18 +9,18 @@ import { GetCityNamesService } from 'src/app/services/get-city-names.service';
 })
 export class TechIdeasComponent implements OnInit {
   cities: any;
-  _cityname:any;
-  constructor(private getName: GetCityNamesService,private formB: FormBuilder) { 
+  techIdeasForm:any;
+
+  constructor(private _cityname: GetCityNamesService,private formB: FormBuilder) { 
     this.cities= this._cityname.getNames();
-  }
-  techIdeasForm = this.formB.group({
-    name: [""],
-    age:[""],
+    this.techIdeasForm = formB.group({
+    name: ["",[Validators.required, Validators.minLength(3)]],
+    age:[],
     email:[""],
     city:[""],
     brief:[""]
   });
-
-  ngOnInit(): void {};
+  }
+  ngOnInit(){}
 
 };

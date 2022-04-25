@@ -1,28 +1,29 @@
-<form>
+<form [formGroup]="techIdeasForm">
     <div>
         <label for = " userName">Name</label>
-        <input type="text" id="userName">
+        <input type="text" id="userName" formControlName="name">
+        
     </div>
     <br>
     <div>
         <label for = "userEmail">E-mail</label>
-        <input type= "email" id = "userEmail">
+        <input type= "email" id = "userEmail" formControlName="email">
     </div>
     <div>
         <label for="userAge">Age</label>
-        <input type="number" id="userAge">
+        <input type="number" id="userAge" formControlName="age">
     </div>
     <br>
     <div>
         <label for="targetCity">Target City</label>
-        <select id="targetCity">
+        <select id="targetCity" formControlName="city">
             <option value ="{{cities}}" *ngFor = "let city of cities">{{city}}</option>
         </select>
     </div>
     <br>
     <div>
         <label for="brief">Brief about your technical idea:</label>
-        <textarea row="4" cols="50" id = "brief"></textarea>
+        <textarea row="4" cols="50" id = "brief" formControlName="brief"></textarea>
     </div>
     <br>
     <button type="submit">Submit</button>
