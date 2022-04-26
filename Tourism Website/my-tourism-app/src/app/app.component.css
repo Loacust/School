@@ -25,3 +25,6 @@
     padding: 10px;
     color:black;
 }
+.anchors:hover{
+    background-color: red;
+}

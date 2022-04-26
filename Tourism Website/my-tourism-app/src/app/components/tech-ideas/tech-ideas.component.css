@@ -1,3 +1,22 @@
 form{
+    margin-left:10px;
     margin-top: 40px;
+}
+input{
+    margin-left: 10px;
+    width: 100%;
+}
+body{
+    height: 600px;
+    background-color: lightgray;
+}
+textarea{
+    margin-left: 10px;
+    height: 100px;
+    width: 100%;
+
+}
+button{
+    background-color: green;
+    color: white
 }
